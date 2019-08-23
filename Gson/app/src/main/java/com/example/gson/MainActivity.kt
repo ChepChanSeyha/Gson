@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         println(json)
 
 
-        val strJson = "{'id': 101, 'name': 'HelloWorld', 'image': 'gg', 'wrong': 'hahah'}"
+        val strJson: String = "{'id': 101, 'name': 'HelloWorld', 'image': 'gg', 'wrong': 'hahah'}"
 
         val strjson = gson.fromJson(strJson, Topic::class.java)
         println(strjson)
